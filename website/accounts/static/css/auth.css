@@ -2,24 +2,9 @@ body {
 	background-color: #373737;
 }
 
-
-.container {
-	height: 100%;
-}
-
-.full {
-	height: 100%
-}
-
 .display-2 {
 	color: #F4F4F4;
+	font-size: 10vw;
+	margin-bottom: 10vh;
 }
 
-.vcenter {
-    margin-top: 50%;
-
-}
-
-.lower {
-	margin-top: 125%;
-}

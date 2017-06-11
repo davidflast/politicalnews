@@ -5,36 +5,36 @@
 <link rel="stylesheet" type="text/css" href={% static "/css/auth.css" %}>
 {% endblock head %}
 
-{% block content %}
+{% block card %}
 
-	<div class="row full">
-		<div class="col-5 full paper">
-			<div class="lower">
-				
-				{% block banner %}
+
+		<div class="row justify-content-center">
+			{% block display %}
+			<h1 class="display-2">welcome.</h1>
+			{% endblock display %}
+		</div>
+		<div class="row paper justify-content-center rounded" >
+			<div class="col-5 ">
+				<div class="lower">
 					
-				<div class="row justify-content-center">
-					<a class="button" href={% url 'login' %}>
-						Login
-					</a>
-				</div>
-				<br>
-				<div class="row justify-content-center">
-					<a class="button" href={% url 'register' %}>
-						Register
-					</a>
-				</div>
+					{% block banner %}
+						
+					<div class="row justify-content-center">
+						<a class="button rounded" href={% url 'login' %}>
+							Login
+						</a>
+					</div>
+					<br>
+					<div class="row justify-content-center">
+						<a class="button" href={% url 'register' %}>
+							Register
+						</a>
+					</div>
 
-				{% endblock banner %}
+					{% endblock banner %}
 
+				</div>
 			</div>
 		</div>
-		<div class="col-6 ">
-			<div class="vcenter">
-				{% block display %}
-				<h1 class="display-2">welcome.</h1>
-				{% endblock display %}
-			</div>	
-		</div>
-	</div>
-{% endblock content %}
+
+{% endblock card %}

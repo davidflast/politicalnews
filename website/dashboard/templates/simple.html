@@ -12,33 +12,38 @@
 	{% endblock head %}
 </head>
 <body>
-	<div class="container middle ">
-		{% block content %}
-	
-		<div class="row justify-content-center">
-			<div class="col ">
-				<h1>EchoChamber</h1>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-sm-5">
-				<p>
-				Using machine learning to score and classify 
-				the partisan bias of news articles
-				</p>
-			</div>
-		</div>
-		<br>
-		<br>
-		<br>
-		<div class="row justify-content-center">
-			<a class="button" href={% url 'accounts' %}>
-				Try it Out
-			</a>
-		</div>
 
-		{% endblock content %}
+{% block content %}
+
+	<div class="container-fluid vertical-center">	
+
+		{% block card %}
+			<div class="row justify-content-center">
+				<div class="col ">
+					<h1>EchoChamber</h1>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col">
+					<p>
+					Using machine learning to score and classify 
+					the partisan bias of news articles
+					</p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<a class="button" href={% url 'accounts' %}>
+					ENTER
+				</a>
+			</div>
+		{% endblock card %}
+
 	</div>
+
+{% endblock content %}
 	
 </body>
 </html>

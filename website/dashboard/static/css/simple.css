@@ -6,41 +6,45 @@ body{
 
 h1 {
 	text-align: center;
-	font-size: 5em;
+	font-size: 12vw;
 	color: #555;
 }
 
 p {
+  text-align: center;
 	font-style: italic;
-	font-size: 1.25em;
-	text-align: center;
+	font-size: 3vw;
 }
 
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.rounded {
+  border-radius: 3px;
 }
 
-.container.middle {
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+.vertical-center {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .button {
 	font-weight: bold;
-    background-color: #F4F4F4;
-    border-style: solid;
-    border-color: #373737 #373737;
-    color: #373737;
-    padding: 10px 70px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.25em;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+  background-color: #F4F4F4;
+  border-style: solid;
+  border-color: #373737 #373737;
+  color: #373737;
+  margin: 5vmin 2vmin ;
+  padding: 2vmin 10vmin;
+  text-align: center;
+  display: inline-block;
+  font-size: 3vmin;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 2px;
 }
 
 .button:hover {
